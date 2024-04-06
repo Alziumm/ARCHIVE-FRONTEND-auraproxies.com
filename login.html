@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraProxies > Login</title>
+    <link rel="preload" href= "FONT/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href= "FONT/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <style>.main-cookie-popup .cookie-popup-footer button{color:var(--primary) !important;} @font-face {font-family: 'Poppins';font-weight: 400;font-style: normal;src: url('FONT/poppins-regular.woff2') format('woff2');font-display: swap;} @font-face {font-family: 'Poppins';font-weight: 700;font-style: normal;src: url('FONT/poppins-bold.woff2') format('woff2');font-display: swap;}</style>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+    <section class = "login">
+        <div class="main-container">
+            <a class = "logo" href="home.html">
+                <img src="IMG/logo-1.png" alt="">
+                AuraProxies
+            </a>
+            <div class="login-container">
+                <h2 class = "login-title"><span class = "primary">Login</span> to your account</h2>
+                <form method="POST" target="_self">
+                    <div class="field">
+                        <label for="">Email / Username :</label>
+                        <input type="email" class = "inpt" placeholder="user@corp.com" required/>
+                    </div>
+                    <div class="field">
+                        <label for="">Password :</label>
+                        <input type="password" class = "inpt" placeholder="••••••••" required/>
+                        <div class="status-container">
+                            <p class = "status error">Invalid password.</p>
+                        </div>
+                    </div>
+                    <div class="under-login">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="check" class ="checkbox" name="user_remember">
+                            <label for="check" class="remember">Remember me</label>
+                        </div>
+                        <p id = "to_forgot" class = "text">Forgot your password?</p>
+                    </div>
+                    <button class = "btn-11 mt30">
+                        <span>
+                        <svg>
+                            <use xlink:href="#circle"/>
+                        </svg>
+                            
+                        <svg>
+                            <use xlink:href="#check"/>
+                        </svg>
+                        </span>
+                        <ul>
+                            <li>Login</li>
+                            <li>En cours d'envois</li>
+                            <li>Envoyé avec succès</li>
+                        </ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                            <symbol xmlns="http://www.w3.org/2000/svg" fill = "var(--secondary)" viewBox="0 0 16 16" id="circle">
+                                <circle cx="8" cy="8" r="7.5"></circle>
+                            </symbol>
+                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="check">
+                                <path d="m.65909042 4.04356308 2.43156433 2.43156433 5.83150483-5.83150482" fill = "var(--secondary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+                            </symbol>
+                        </svg>
+                    </button>
+                    <p class = "sign_up">New on our platform? <span class = "primary" id = "to_register">Create an account.</span></p>
+                </form>
+            </div>
+            <div class="register-container dn">
+                <h2 class = "login-title"><span class = "primary">Create</span> an account</h2>
+                <form method="POST" target="_self">
+                    <div class="field">
+                        <label for="">Username :</label>
+                        <input type="text" class = "inpt" placeholder="Alzium" required/>
+                    </div>
+                    <div class="field">
+                        <label for="">Email :</label>
+                        <input type="email" class = "inpt" placeholder="myemail@corp.com" required/>
+                    </div>
+                    <div class="field">
+                        <label for="">Password :</label>
+                        <input type="password" class = "inpt" placeholder="••••••••" required/>
+                    </div>
+                    <div class="field">
+                        <label for="">Confirm password :</label>
+                        <input type="password" class = "inpt" placeholder="••••••••" required/>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="terms" class ="checkbox" name="terms">
+                        <label for="terms" class="remember">I accept the <span class = "primary">Terms and Conditions*</span>.</label>
+                    </div>
+                    <div class="checkbox-container-2">
+                        <input type="checkbox" id="pub" class ="checkbox" name="pub">
+                        <label for="pub" class="remember">I accept to receive discounts and information about AuraProxies via e-mail.</label>
+                    </div>
+                    <button class = "btn-11 mt10">
+                        <span>
+                        <svg>
+                            <use xlink:href="#circle"/>
+                        </svg>
+                            
+                        <svg>
+                            <use xlink:href="#check"/>
+                        </svg>
+                        </span>
+                        <ul>
+                            <li>Register</li>
+                            <li>En cours d'envois</li>
+                            <li>Envoyé avec succès</li>
+                        </ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                            <symbol xmlns="http://www.w3.org/2000/svg" fill = "var(--secondary)" viewBox="0 0 16 16" id="circle">
+                                <circle cx="8" cy="8" r="7.5"></circle>
+                            </symbol>
+                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="check">
+                                <path d="m.65909042 4.04356308 2.43156433 2.43156433 5.83150483-5.83150482" fill = "var(--secondary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+                            </symbol>
+                        </svg>
+                    </button>
+                    <p class = "sign_up">Already have an account? <span class = "primary" id = "to_login">Login.</span></p>
+                </form>
+            </div>
+            <div class="forgot-container dn">
+                <h2 class = "login-title"><span class = "primary">Forgot</span> your password?</h2>
+                <p class = "instruction">Please enter the email address associated with your account. We will send you an email with instructions to reset your password.</p>
+                <form method="POST" target="_self">
+                    <div class="field">
+                        <label for="">Email :</label>
+                        <input type="email" class = "inpt" placeholder="user@corp.com" required/>
+                    </div>
+                    <button class = "btn-11 mt30">
+                        <span>
+                        <svg>
+                            <use xlink:href="#circle"/>
+                        </svg>
+                            
+                        <svg>
+                            <use xlink:href="#check"/>
+                        </svg>
+                        </span>
+                        <ul>
+                            <li>Reset Password</li>
+                            <li>En cours d'envois</li>
+                            <li>Envoyé avec succès</li>
+                        </ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                            <symbol xmlns="http://www.w3.org/2000/svg" fill = "var(--secondary)" viewBox="0 0 16 16" id="circle">
+                                <circle cx="8" cy="8" r="7.5"></circle>
+                            </symbol>
+                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="check">
+                                <path d="m.65909042 4.04356308 2.43156433 2.43156433 5.83150483-5.83150482" fill = "var(--secondary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+                            </symbol>
+                        </svg>
+                    </button>
+                    <p class = "sorry" id = "to_login_2">Sorry I retrieve my password...</p>
+                </form>
+            </div>
+            <div class="twofactor-container dn main-2FA-container">
+                <p class = "back" id = "back">< Go back</p>
+                <h2 class = "login-title tc"><span class = "primary">Verif</span> your email address.</h2>
+                <form method="POST" target="_self">
+                    <div class="field">
+                        <div class="otpcontainer">
+                            <div class="otp-field" id="otp-field">
+                                <input type="text" minlength="1" maxlength="1" name="c1" required="" data-index="0">
+                                <input type="text" minlength="1" maxlength="1" name="c2" required="" data-index="1">
+                                <input type="text" minlength="1" maxlength="1" name="c3" required="" class="space" data-index="2">
+                                <input type="text" minlength="1" maxlength="1" name="c4" required="" data-index="3">
+                                <input type="text" minlength="1" maxlength="1" name="c5" required="" data-index="4">
+                                <input type="text" maxlength="1" name="c6" required="" data-index="5">
+                            </div>
+                        </div>
+                    </div>
+                    <button class = "btn-11 mt30">
+                        <span>
+                        <svg>
+                            <use xlink:href="#circle"/>
+                        </svg>
+                            
+                        <svg>
+                            <use xlink:href="#check"/>
+                        </svg>
+                        </span>
+                        <ul>
+                            <li>Verif</li>
+                            <li>En cours d'envois</li>
+                            <li>Envoyé avec succès</li>
+                        </ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                            <symbol xmlns="http://www.w3.org/2000/svg" fill = "var(--secondary)" viewBox="0 0 16 16" id="circle">
+                                <circle cx="8" cy="8" r="7.5"></circle>
+                            </symbol>
+                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="check">
+                                <path d="m.65909042 4.04356308 2.43156433 2.43156433 5.83150483-5.83150482" fill = "var(--secondary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+                            </symbol>
+                        </svg>
+                    </button>
+                    <p class = "sign_up">Didn't receive the email? <span class = "primary" id = "to_register">Resend.</span></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="JS/login.js"></script>
+</body>
+</html>
